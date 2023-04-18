@@ -14,7 +14,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:7070/
+**On, Backend tomcat :** http://192.168.40.128:7070/,
 
     Shutdown 	=	7005
     http		=	7070
@@ -42,7 +42,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:8080/
+**On, Backend tomcat :** http://192.168.40.128:8080/,
 
     Shutdown 	=	8005
     http		=	8080
@@ -69,7 +69,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:9090/
+**On, Backend tomcat :** http://192.168.40.128:9090/,
 
     Shutdown 	=	9005
     http		=	9090
@@ -109,7 +109,7 @@
 
 <br>
 
-**Install Dependencies**
+**Install Dependencies,**
 
 `[root@server native]# yum install -y httpd-devel`
 
@@ -119,7 +119,7 @@
 
 <br>
 
-**Download mod_jk connector (tar.gz format) from Tomcat website**
+**Download mod_jk connector (tar.gz format) from Tomcat website,**
 
 **Download,** https://tomcat.apache.org/download-connectors.cgi 
 
@@ -159,7 +159,7 @@
 
 <br>
 
-**Execute the Make Command**
+**Execute the Make Command,**
 
 `[root@server native]# libtool --finish /usr/lib64/httpd/modules`
 
@@ -171,7 +171,7 @@
 
 <br>
 
-**Copy the Generated mod_jk.so file to apache modules**
+**Copy the Generated mod_jk.so file to apache modules,**
 
 `[root@server ~]# find / -name mod_jk.so`
 
@@ -199,7 +199,7 @@
 
 <br>
 
-**Load the Module mod_jk.so**
+**Load the Module mod_jk.so,**
 
 `[root@server httpd]# grep -i ^Include conf/httpd.conf`
 
@@ -263,14 +263,14 @@
 
 <br>
 
-**Update your Apache Virtual Host file and add JKMount**
+**Update your Apache Virtual Host file and add JKMount,**
 
     JkMount /<Your Application Name>/* lb_router
     JkMount /myapp/* lb_router
 
 <br>
 
-**Validate the Logs – Audit the Logs**
+**Validate the Logs – Audit the Logs,**
 
 `[root@server conf]# tail -20f /etc/httpd/mod_jk.log`
 
