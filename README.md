@@ -14,7 +14,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:7070/,
+**On, Backend tomcat :** http://192.168.40.128:7070/
 
     Shutdown 	=	7005
     http		=	7070
@@ -42,7 +42,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:8080/,
+**On, Backend tomcat :** http://192.168.40.128:8080/
 
     Shutdown 	=	8005
     http		=	8080
@@ -69,7 +69,7 @@
 
 <br>
 
-**On, Backend tomcat :** http://192.168.40.128:9090/,
+**On, Backend tomcat :** http://192.168.40.128:9090/
 
     Shutdown 	=	9005
     http		=	9090
@@ -97,7 +97,7 @@
 
 <br>
 
-### Apache ,  mod_jk connector server configuration,
+### Apache, mod_jk connector server configuration,
 
 **On, Apache / mod_jk connector server :** http://192.168.40.129/
 
