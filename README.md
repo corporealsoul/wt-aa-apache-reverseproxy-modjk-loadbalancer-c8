@@ -147,6 +147,8 @@
 
 `[root@server native]# ./buildconf.sh`
 
+<br>
+
 **Configure with APXS,**
 
 `[root@server native]# ./configure --with-apxs=/usr/bin/apxs`
